@@ -15,14 +15,14 @@ function StorySubmit({ latLong }) {
     useEffect(() => {
         (async function () {
             const allPrompts = []
-            const response = await allPrompts.get();
-            const newPrompts = [];
-            response.docs.forEach((doc) => {
-                const data = doc.data();
-                newPrompts.push(data.text);
-            });
-            setPrompt(newPrompts[0]);
-            setPrompts(newPrompts);
+            // const response = await allPrompts.get();
+            // const newPrompts = [];
+            // response.docs.forEach((doc) => {
+            //     const data = doc.data();
+            //     newPrompts.push(data.text);
+            // });
+            // setPrompt(newPrompts[0]);
+            // setPrompts(newPrompts);
         })();
     }, []);
 
